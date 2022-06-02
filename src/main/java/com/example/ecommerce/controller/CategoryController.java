@@ -16,18 +16,18 @@ import com.example.ecommerce.service.CategoryService;
 @RequestMapping("/category")
 public class CategoryController {
 
-	@Autowired
-	CategoryService categoryService;
+    @Autowired
+    CategoryService categoryService;
 	
-	@PostMapping("/create")
-	public String createCategory(@RequestBody Category category) {
-		categoryService.createCategory(category);
-		return "sucess";
-	}
+	 @PostMapping("/create")
+	    public String createCategory(@RequestBody Category category) {
+	        categoryService.createCategory(category);
+	        return "success";
+	    }
 	
 	@GetMapping("/list")
-	public List<Category> listCategory() {
-		return categoryService.listCategory();
-	}
+    public List<Category> listCategory() {
+        return categoryService.listCategory();
+    }
 	
 }
