@@ -18,15 +18,11 @@ public class SwaggerConfig {
     @Bean
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-//                .apiInfo(getApiInfo())
-//                .select()
-//                .apis(RequestHandlerSelectors.basePackage("com.example.ecommerce"))
-//                .paths(PathSelectors.any())
-//                .build();
-        		.select()
+                .apiInfo(getApiInfo())
+                .select()
+                .apis(RequestHandlerSelectors.basePackage("com.example.ecommerce"))
                 .paths(PathSelectors.any())
                 .build()
-                .apiInfo(getApiInfo())
                 .useDefaultResponseMessages(false);
     }
     
