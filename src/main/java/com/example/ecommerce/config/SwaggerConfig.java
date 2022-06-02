@@ -24,9 +24,9 @@ public class SwaggerConfig {
                 .paths(PathSelectors.any())
                 .build();
     }
-
+    
     private ApiInfo getApiInfo() {
-        Contact contact = new Contact("andreyfabricio", "http://andreyfabricio.dev", "contact.andrey.fas@gmail.com");
+    	Contact contact = new Contact("andreyfabricio", "http://andreyfabricio.dev", "contact.andrey.fas@gmail.com");
         return new ApiInfoBuilder()
                 .title("Ecommerce API")
                 .description("Documentation Ecommerce api")
@@ -36,4 +36,15 @@ public class SwaggerConfig {
                 .contact(contact)
                 .build();
     }
+//    private ApiInfo getApiInfo() {
+//        Contact contact = new Contact("andreyfabricio", "http://andreyfabricio.dev", "contact.andrey.fas@gmail.com");
+//        return new ApiInfoBuilder()
+//                .title("Ecommerce API")
+//                .description("Documentation Ecommerce api")
+//                .version("1.0.0")
+//                .license("Apache 2.0")
+//                .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0")
+//                .contact(contact)
+//                .build();
+//    }
 }
