@@ -29,5 +29,9 @@ public class CategoryService {
 		category.setImageUrl(updateCategory.getImageUrl());
 		categoryRepo.save(category);
 	}
+
+	public boolean findById(int categoryId) {
+		return categoryRepo.findById(categoryId).isPresent();
+	}
 	
 }
